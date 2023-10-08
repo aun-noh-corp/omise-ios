@@ -36,14 +36,6 @@ import UIKit
         }
     }
     
-    @available(iOS, unavailable)
-    public override var delegate: UITextFieldDelegate? {
-        get {
-            return self
-        }
-        set {}
-    }
-    
     private lazy var cardNumberStringTokenizer = CreditCardNumberTextInputStringTokenizer(cardNumberTextField: self)
 
     public override init(frame: CGRect) {
